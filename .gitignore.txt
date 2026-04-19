@@ -1,0 +1,20 @@
+# Виртуальное окружение
+venv/
+env/
+ENV/
+
+# Файлы Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Файлы данных
+user_data.json
+
+# Файлы IDE и редакторов
+.vscode/
+.idea/
+
+# Файлы с секретами
+.env
+config.py
