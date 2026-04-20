@@ -9,20 +9,17 @@ from flask import Flask
 from telebot import types
 from datetime import datetime
 from schedule_data import Schedule
-# from telebot import apihelper
 
-
-BOT_API_TOKEN = '8231604802:AAFAWISxMGmnd-opH_ezb2HdSIZfoi3d9hM'
+# Получение токена из переменных окружения
+BOT_API_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+weather_API =  os.environ.get('weather_API')
 bot = telebot.TeleBot(BOT_API_TOKEN)
-
 USER_DATA_FILE = "user_data.json"
 
-weather_API = 'f6c4e764b85d5679383a4f7e5be70eb2'
-
-# PROXY = 'socks5://127.0.0.1:1080'
-# apihelper.proxy = {'http': PROXY, 'https': PROXY}
-
+if not BOT_API_TOKEN: # Проверка на загрузку токена
+    raise ValueError("Переменная не найдена")
 session = requests.Session()
+
 session.request = functools.partial(session.request, timeout=30)
 
 weather_descriptions = {
