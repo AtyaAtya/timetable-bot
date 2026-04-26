@@ -30,12 +30,12 @@ weather_descriptions = {
     "scattered clouds": "рассеянные облака",
     "broken clouds": "разорванные облака",
     "overcast clouds": "пасмурно",
-    "light rain": "легкий дождь",
+    "light intensity shower rain": "легкий дождь",
     "moderate rain": "умеренный дождь",
     "heavy rain": " сильный дождь",
     "thunderstorm": "гроза",
     "smoke": "туман",
-    "haze": "лёгкий туман",
+    "haze": "лёгкий туман"
 }
 
 classes = ['10/1', '10/2', '10/3', '10/4']
