@@ -27,12 +27,12 @@ session.request = functools.partial(session.request, timeout=30)
 weather_descriptions = {
     "clear sky": "ясно",
     "few clouds": "слегка облачно",
-    "scattered clouds": "рассеянные облака",
-    "broken clouds": "разорванные облака",
+    "scattered clouds": "очень редкие облака",
+    "broken clouds": "переменная облачность",
     "overcast clouds": "пасмурно",
     "light intensity shower rain": "легкий дождь",
     "moderate rain": "умеренный дождь",
-    "heavy rain": " сильный дождь",
+    "heavy rain": " очень сильный дождь",
     "thunderstorm": "гроза",
     "smoke": "туман",
     "haze": "лёгкий туман"
